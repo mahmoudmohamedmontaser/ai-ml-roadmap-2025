@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & ML Engineer Roadmap 2025-2026 | الموسوعة الكاملة لجميع المهارات والمصادر</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            50: '#eff6ff',
+            100: '#dbeafe',
+            500: '#3b82f6',
+            600: '#2563eb',
+            700: '#1d4ed8',
+            900: '#1e3a8a',
+          }
+        }
+      }
+    }
+  }
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+  body {
+    font-family: 'Tajawal', sans-serif;
+  }
+  .glass-card {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glow-purple {
+    box-shadow: 0 0 35px rgba(112, 0, 255, 0.22);
+  }
+  pre, code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    direction: ltr;
+    text-align: left;
+  }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen pb-20">
+
+  <!-- TOP NAVBAR -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-800 bg-slate-950/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🤖</span>
+        <h1 class="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+          AI/ML Engineer Complete Roadmap 2025-2026
+        </h1>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="header-progress-badge" class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1.5 rounded-full border border-blue-500/30">
+          التقدم: 0%
+        </span>
+        <button onclick="exportData()" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+          📥 تصدير البيانات
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
+    <div class="glass-card rounded-2xl p-8 relative overflow-hidden glow-purple border-purple-500/20">
+      <div class="relative z-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-bold mb-3">
+          💎 الموسوعة الكاملة لجميع المهارات والمصادر المرتبة بالأفضلية (Vercel & GitHub Ready)
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">
+          الموسوعة الكاملة المحدثة 100% لجميع مهارات الذكاء الاصطناعي
+        </h2>
+        <p class="text-slate-400 max-w-4xl text-sm sm:text-base leading-relaxed">
+          تغطي هذه الموسوعة جميع المهارات والتقنيات الـ 19 الأساسية الموزعة على 5 مراحل هندسية، متضمنةً الشرح التفصيلي، أهم المفاهيم، المصادر العربية والعالمية المجهزة بالروابط المباشرة، المشاريع، ومحاكي المقابلات.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+          <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+            <div class="text-slate-400 text-xs font-bold">⏱️ مدة المسار</div>
+            <div class="text-lg font-extrabold text-cyan-400">9 - 10 أشهر</div>
+          </div>
+          <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+            <div class="text-slate-400 text-xs font-bold">📚 المهارات المشمولة</div>
+            <div class="text-lg font-extrabold text-purple-400">19 مهارة تفصيلية</div>
+          </div>
+          <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+            <div class="text-slate-400 text-xs font-bold">🛠️ المشاريع المعمارية</div>
+            <div class="text-lg font-extrabold text-emerald-400">5 مشاريع إنتاجية</div>
+          </div>
+          <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3 text-center">
+            <div class="text-slate-400 text-xs font-bold">🌐 المصادر بالروابط</div>
+            <div class="text-lg font-extrabold text-amber-400">روابط مباشرة</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR BAR -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+    <div class="glass-card rounded-xl p-4 border border-slate-800 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="text-xl">⏳</span>
+        <div>
+          <h4 class="font-bold text-sm text-slate-200">حاسبة الجدول الزمني والجاهزية</h4>
+          <p class="text-xs text-slate-400">أدخل عدد ساعات الدراسة اليومية لحساب تاريخ تخرجك المتوقع:</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <input type="number" id="hours-per-day" min="1" max="12" value="3" onchange="calculateTimeline()" class="bg-slate-900 border border-slate-700 text-white font-bold rounded-lg px-3 py-1.5 text-sm w-20 text-center">
+        <span class="text-xs text-slate-400">ساعة / يومياً</span>
+        <div id="calculated-finish" class="bg-blue-600/20 text-blue-300 font-extrabold text-xs px-3 py-2 rounded-lg border border-blue-500/30">
+          الموعد المتوقع: خلال 7 أشهر
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH & NAVIGATION TABS -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+    <div class="flex flex-col md:flex-row gap-4 justify-between items-center mb-6">
+      <div class="w-full md:w-96 relative">
+        <input type="text" id="main-search" oninput="searchFilter()" placeholder="🔍 ابحث في الموسوعة (PyTorch, RAG, XGBoost, vLLM, LangGraph)..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500">
+      </div>
+
+      <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0">
+        <button onclick="switchTab('tab-skills', this)" class="tab-btn active bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl whitespace-nowrap transition">📚 موسوعة المهارات الشاملة (19 مهارة)</button>
+        <button onclick="switchTab('tab-projects', this)" class="tab-btn bg-slate-900 text-slate-400 hover:text-white text-xs font-bold px-4 py-2 rounded-xl whitespace-nowrap border border-slate-800 transition">🛠️ مشاريع الـ Portfolio المعمارية</button>
+        <button onclick="switchTab('tab-simulator', this)" class="tab-btn bg-slate-900 text-slate-400 hover:text-white text-xs font-bold px-4 py-2 rounded-xl whitespace-nowrap border border-slate-800 transition">🎯 محاكي المقابلات</button>
+        <button onclick="switchTab('tab-cv', this)" class="tab-btn bg-slate-900 text-slate-400 hover:text-white text-xs font-bold px-4 py-2 rounded-xl whitespace-nowrap border border-slate-800 transition">💼 صياغة الـ CV</button>
+        <button onclick="switchTab('tab-tracker', this)" class="tab-btn bg-slate-900 text-slate-400 hover:text-white text-xs font-bold px-4 py-2 rounded-xl whitespace-nowrap border border-slate-800 transition">✅ متتبع الإنجاز</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN TAB AREA -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 1. TAB SKILLS ENCYCLOPEDIA -->
+    <div id="tab-skills" class="tab-pane space-y-12">
+
+      <!-- PHASE 1 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <span class="bg-blue-500/20 text-blue-400 text-xs font-black px-3 py-1 rounded-md">Phase 1</span>
+          <h3 class="text-xl font-black text-white">1️⃣ مهارات البرمجة وهندسة البرمجيات (Software Engineering)</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-6" id="p1-skills-container"></div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <span class="bg-emerald-500/20 text-emerald-400 text-xs font-black px-3 py-1 rounded-md">Phase 2</span>
+          <h3 class="text-xl font-black text-white">2️⃣ الرياضيات وتعلم الآلة الكلاسيكي (Applied Math & Classic ML)</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-6" id="p2-skills-container"></div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <span class="bg-amber-500/20 text-amber-400 text-xs font-black px-3 py-1 rounded-md">Phase 3</span>
+          <h3 class="text-xl font-black text-white">3️⃣ التعلم العميق والمحولات (Deep Learning & PyTorch)</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-6" id="p3-skills-container"></div>
+      </div>
+
+      <!-- PHASE 4 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <span class="bg-purple-500/20 text-purple-400 text-xs font-black px-3 py-1 rounded-md">Phase 4</span>
+          <h3 class="text-xl font-black text-white">4️⃣ الذكاء الاصطناعي التوليدي والنماذج اللغوية (GenAI, LLMs & AI Agents)</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-6" id="p4-skills-container"></div>
+      </div>
+
+      <!-- PHASE 5 -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <span class="bg-pink-500/20 text-pink-400 text-xs font-black px-3 py-1 rounded-md">Phase 5</span>
+          <h3 class="text-xl font-black text-white">5️⃣ MLOps, LLMOps والبنية التحتية (Production Deployment)</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-6" id="p5-skills-container"></div>
+      </div>
+
+    </div>
+
+    <!-- 2. TAB PROJECTS -->
+    <div id="tab-projects" class="tab-pane hidden space-y-6">
+      <div class="text-right mb-4">
+        <h3 class="text-2xl font-black text-white mb-1">🛠️ مشاريع الـ Portfolio المعمارية المقترحة</h3>
+        <p class="text-slate-400 text-xs sm:text-sm">5 مشاريع عملية من الدرجة الإنتاجية لتعزيز سيرتك الذاتية وحساب GitHub.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+          <span class="text-purple-400 text-[10px] font-extrabold uppercase tracking-wider bg-purple-500/10 px-2.5 py-1 rounded-full border border-purple-500/20">Project 1</span>
+          <h4 class="text-lg font-bold text-white">📊 Enterprise Credit Risk Predictor API</h4>
+          <p class="text-slate-300 text-xs leading-relaxed">نموذج XGBoost متكامل مع توفير واجهة FastAPI سريعة واختبارات بـ Pytest وتتبع التجارب عبر MLflow ونشره داخل Docker.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+          <span class="text-cyan-400 text-[10px] font-extrabold uppercase tracking-wider bg-cyan-500/10 px-2.5 py-1 rounded-full border border-cyan-500/20">Project 2</span>
+          <h4 class="text-lg font-bold text-white">👁️ PyTorch Vision Document Classifier</h4>
+          <p class="text-slate-300 text-xs leading-relaxed">تدريب نموذج Vision Transformer (ViT) مخصص باستخدام PyTorch لتصنيف المستندات مع واجهة تفاعلية بـ Streamlit.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+          <span class="text-emerald-400 text-[10px] font-extrabold uppercase tracking-wider bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Project 3</span>
+          <h4 class="text-lg font-bold text-white">🔍 Multimodal Enterprise RAG Assistant</h4>
+          <p class="text-slate-300 text-xs leading-relaxed">محرك استرجاع معرفي يستند لـ Qdrant Vector DB و Hybrid Search و Cohere Re-ranker وتقييم الإجابات بـ Ragas.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+          <span class="text-amber-400 text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Project 4</span>
+          <h4 class="text-lg font-bold text-white">🤖 Autonomous LangGraph Agent System</h4>
+          <p class="text-slate-300 text-xs leading-relaxed">وكيل أذكياء متعدد الخطوات يتضمن استدعاء الأدوات والتنفيذ المعزول للكود مع حفظ الذاكرة ومراجعة بشرية.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. TAB SIMULATOR -->
+    <div id="tab-simulator" class="tab-pane hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 max-w-4xl mx-auto space-y-6">
+        <h3 class="text-2xl font-black text-white mb-2">🎯 محاكي تقييم الجاهزية والمقابلات الفنية</h3>
+        <p class="text-slate-400 text-xs sm:text-sm">اختبر معرفتك الفنية في أهم أسئلة المقابلات الحقيقية لوظائف مهندس الذكاء الاصطناعي:</p>
+
+        <div class="space-y-6 text-xs sm:text-sm">
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 space-y-2">
+            <p class="font-bold text-slate-200">س1: ما فائدة تقنية PagedAttention في محرك vLLM؟</p>
+            <label class="block p-2.5 rounded-lg border border-slate-800 hover:border-blue-500 cursor-pointer">
+              <input type="radio" name="sq1" value="0" class="ml-2"> تسريع وقت تدريب النماذج من الصفر.
+            </label>
+            <label class="block p-2.5 rounded-lg border border-slate-800 hover:border-blue-500 cursor-pointer">
+              <input type="radio" name="sq1" value="1" class="ml-2"> تقليل إهدار ذاكرة KV Cache بنسبة تصل لـ 96% عبر تقطيع الذاكرة كصفحات غير متصلة تشبه Virtual Memory.
+            </label>
+          </div>
+
+          <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 space-y-2">
+            <p class="font-bold text-slate-200">س2: متى نختار RAG بدلاً من الـ Fine-Tuning؟</p>
+            <label class="block p-2.5 rounded-lg border border-slate-800 hover:border-blue-500 cursor-pointer">
+              <input type="radio" name="sq2" value="1" class="ml-2"> عندما نحتاج لتزويد النموذج بمعلومات جديدة ومتغيرة باستمرار ومنع الهلوسة مع الاستشهاد بالمصادر.
+            </label>
+            <label class="block p-2.5 rounded-lg border border-slate-800 hover:border-blue-500 cursor-pointer">
+              <input type="radio" name="sq2" value="0" class="ml-2"> عندما نود تغيير نبرة النموذج وأسلوب الإجابة فقط.
+            </label>
+          </div>
+        </div>
+
+        <button onclick="runSimCheck()" class="w-full mt-4 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl text-sm transition">
+          عرض النتيجة والتقييم الفني
+        </button>
+        <div id="sim-result" class="mt-4 text-center font-bold text-sm"></div>
+      </div>
+    </div>
+
+    <!-- 4. TAB CV GUIDE -->
+    <div id="tab-cv" class="tab-pane hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 max-w-4xl mx-auto space-y-6">
+        <h3 class="text-xl font-bold text-cyan-400 mb-2">💼 دليل صياغة السيرة الذاتية (AI/ML Engineer Resume)</h3>
+        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 text-xs space-y-3">
+          <div class="text-red-400 font-bold">❌ الصياغة الضعيفة (تجنبها):</div>
+          <div class="text-slate-400 bg-slate-950 p-2.5 rounded border border-slate-800">"Built an AI agent using LangChain and Python."</div>
+          <div class="text-emerald-400 font-bold pt-2">✅ الصياغة الاحترافية المقبولة في شركات التقنية:</div>
+          <div class="text-slate-200 bg-slate-950 p-2.5 rounded border border-slate-800">"Architected an autonomous multi-agent code auditing framework using LangGraph and Pydantic, reducing manual code review time by 65% and catching 94% of security vulnerabilities across 100+ PRs."</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. TAB TRACKER -->
+    <div id="tab-tracker" class="tab-pane hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-bold text-white">✅ متتبع الإنجاز الشخصي (Auto-Saved)</h3>
+          <button onclick="resetTracker()" class="text-xs bg-red-500/10 border border-red-500/30 text-red-400 px-3 py-1.5 rounded-lg hover:bg-red-500/20">إعادة ضبط التتبع</button>
+        </div>
+        <div class="w-full bg-slate-900 rounded-full h-3 mb-6 overflow-hidden border border-slate-800">
+          <div id="tracker-bar" class="bg-gradient-to-r from-blue-500 to-emerald-400 h-full w-0 transition-all duration-300"></div>
+        </div>
+        <div id="tracker-list" class="space-y-4"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // COMPLETE 19-SKILL ENCYCLOPEDIA DATASTRUCTURE
+    const encyclopediaData = [
+      // PHASE 1
+      {
+        phase: 1,
+        title: "🔹 Python Advanced & Production Quality",
+        concepts: "البرمجة كائنية التوجه (OOP), المولدات (Generators), المزين (Decorators), البرمجة غير التزامنية (Async/Await & Asyncio), Type Hinting الشامل, والتحقق من البيانات مع Pydantic v2.",
+        quality: "Pytest للاختبارات التلقائية, Black/Ruff للتنسيق, واستخدام Design Patterns (Factory, Singleton, Repository).",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 د. محمد الدسوقي / Elzero (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl8upXRbfT3132644WthKmgX", type: "arabic" },
+          { rank: "الأفضل عالمياً", name: "🌐 Real Python Core & Advanced", url: "https://realpython.com/", type: "global" },
+          { rank: "المستندات الرسمية", name: "📖 Pydantic Official Docs", url: "https://docs.pydantic.dev/", type: "global" }
+        ]
+      },
+      {
+        phase: 1,
+        title: "🔹 Git & GitHub Flow",
+        concepts: "إدارة الفروع (Branching strategies), دمج الأكواد (Merging vs Rebasing), معالجة الـ Merge Conflicts, إنشاء Pull Requests الاحترافية, وأتمتة الاختبارات عبر GitHub Actions CI/CD.",
+        quality: "تطبيق قواعد Conventional Commits والتعامل مع العمل الاستعراضي لفرق التطوير.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 Elzero Web School Git/GitHub (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl9wXg-z_b6703_9J664HlB2", type: "arabic" },
+          { rank: "الأفضل عالمياً", name: "📖 Pro Git Book Free", url: "https://git-scm.com/book/en/v2", type: "global" }
+        ]
+      },
+      {
+        phase: 1,
+        title: "🔹 Linux CLI & Bash Scripting",
+        concepts: "إدارة العمليات (Process mgmt), التحكم بالصلاحيات (chmod/chown), معالجة النصوص (grep, sed, awk), كتابة سكريبتات Bash لأتمتة التشغيل، وجدولة المهام عن طريق Cron.",
+        quality: "إدارة بيئة التشغيل والخوادم وحظر الأخطاء البرمجية الإنتاجية.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 كورس لينكس Elzero / أكاديمية حسوب (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl-ihX7p_VvB86Zg-wJt0PjJ", type: "arabic" },
+          { rank: "الأفضل عالمياً", name: "🌐 Linux Journey", url: "https://www.linuxjourney.com/", type: "global" }
+        ]
+      },
+      {
+        phase: 1,
+        title: "🔹 Data Structures & Algorithms (DSA)",
+        concepts: "Arrays, Hash Tables, Stacks/Queues, Binary Trees, Graphs (BFS/DFS), Sorting & Searching, وحساب التعقيد الزمني والمكاني (Big-O Notation). حل مشاكل LeetCode Medium.",
+        quality: "بناء التفكير البرمجي التكفي وتقليل تعقيد الخوارزميات.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 د. مصطفى سعد (Mustafa Saad Sheet) (عربي)", url: "https://youtube.com/playlist?list=PLPt2dINI2MIb1x-18c66e2B04B1M", type: "arabic" },
+          { rank: "الأفضل للمقابلات", name: "🌐 NeetCode 150 (عالمي)", url: "https://neetcode.io/", type: "global" }
+        ]
+      },
+      {
+        phase: 1,
+        title: "🔹 Databases & SQL Optimization",
+        concepts: "الاستعلامات المعقدة (Complex Joins, Window Functions, Subqueries), الفهارس (Indexing & Query Optimization), التعامل مع PostgreSQL, واستخدام ORMs مثل SQLAlchemy أو SQLModel.",
+        quality: "تسريع جلب البيانات وتقليل إجهاد خوادم قواعد البيانات.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 د. محمد الدسوقي / Elzero SQL (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl1", type: "arabic" },
+          { rank: "الأفضل عالمياً", name: "🌐 Mode Analytics SQL Tutorial", url: "https://mode.com/sql-tutorial/", type: "global" }
+        ]
+      },
+
+      // PHASE 2
+      {
+        phase: 2,
+        title: "🔹 الرياضيات التطبيقية للذكاء الاصطناعي",
+        concepts: "الجبر الخطي (المصفوفات، المتجهات، الضرب النقطي Dot Product, Eigenvalues, Eigenvectors, SVD), التفاضل والتكامل (Partial Derivatives, Gradients, Chain Rule, Optimization), الإحصاء والاحتمالات (Bayes' Theorem, Probability Distributions, Descriptive Statistics, Hypothesis Testing).",
+        quality: "الفهم الرياضي لآلية تحديث Weights وتقليل الخسارة Loss Reduction.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 د. هشام عاصم / د. أحمد حسام (عربي)", url: "https://youtube.com/@HeshamAsem", type: "arabic" },
+          { rank: "الأفضل للشرح البصري", name: "📺 3Blue1Brown Linear Algebra & Calculus", url: "https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab", type: "global" },
+          { rank: "كورس أكاديمي", name: "🌐 Mathematics for ML Specialization (Coursera)", url: "https://www.coursera.org/specializations/mathematics-machine-learning", type: "global" }
+        ]
+      },
+      {
+        phase: 2,
+        title: "🔹 معالجة وتحليل البيانات (Data Engineering Basics)",
+        concepts: "NumPy للمصفوفات، Pandas لمعالجة الجداول، Polars للعمليات عالية الأداء، الاستكشاف البصري (Matplotlib & Seaborn)، والتعامل مع البيانات المفقودة والقيم الشاذة (Imputation & Outliers).",
+        quality: "تهيئة البيانات المجدولة واستخراج الميزات Feature Engineering.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 قناة حسوب / د. هشام عاصم Pandas (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl0", type: "arabic" },
+          { rank: "تطبيقي عالمي", name: "🌐 Kaggle Learn: Pandas & Data Cleaning", url: "https://www.kaggle.com/learn", type: "global" }
+        ]
+      },
+      {
+        phase: 2,
+        title: "🔹 خوارزميات ML الكلاسيكية وتطبيقاتها",
+        concepts: "Supervised (Linear/Logistic Regression, Decision Trees, Random Forests, XGBoost, LightGBM, CatBoost), Unsupervised (K-Means, DBSCAN, PCA), Scikit-Learn Pipelines & Optuna Tuning.",
+        quality: "بناء النماذج وتفادي Overfitting وحل مسابقات الكاجل.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 كورس Machine Learning د. هشام عاصم (عربي)", url: "https://youtube.com/playlist?list=PLuXY368gB14", type: "arabic" },
+          { rank: "الأشهر عالمياً", name: "🌐 Machine Learning Specialization - Andrew Ng", url: "https://www.coursera.org/specializations/machine-learning-introduction", type: "global" }
+        ]
+      },
+
+      // PHASE 3
+      {
+        phase: 3,
+        title: "🔹 PyTorch Framework (المهارة الأساسية)",
+        concepts: "Tensors, Autograd, Custom Datasets & DataLoaders, Custom Loss Functions, Custom Optimizer & Learning Rate Schedulers, Distributed Data Parallel (DDP).",
+        quality: "كتابة الشبكات العصبية المخصصة بحرية كاملة.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 كورس Deep Learning د. هشام عاصم (عربي)", url: "https://youtube.com/playlist?list=PLuXY368gB14", type: "arabic" },
+          { rank: "المرجع العالمي الذهبي", name: "🌐 Learn PyTorch by Daniel Bourke", url: "https://www.learnpytorch.io/", type: "global" }
+        ]
+      },
+      {
+        phase: 3,
+        title: "🔹 بنية الشبكات العصبية (Architectures)",
+        concepts: "MLPs, CNNs (ResNet), RNNs/LSTMs, و Transformers Architecture (Self-Attention, Multi-Head Attention, Positioning Encoding, Encoder/Decoder).",
+        quality: "فهم المعماريات وتطبيق التكيف مع الرؤية الحاسوبية ومعالجة اللغات.",
+        links: [
+          { rank: "الكورس العالمي الأساسي", name: "🌐 Deep Learning Specialization - Andrew Ng", url: "https://www.coursera.org/specializations/deep-learning", type: "global" },
+          { rank: "شرح فني أكاديمي", name: "🌐 François Fleuret Deep Learning Course", url: "https://fleuret.org/dlc/", type: "global" }
+        ]
+      },
+      {
+        phase: 3,
+        title: "🔹 Hugging Face Ecosystem",
+        concepts: "Hugging Face Transformers Library, Datasets, Tokenizers, Evaluate, Accelerate. التعامل مع النماذج المسبقة التدريب واستخراج الـ Embeddings.",
+        quality: "التعامل المباشر مع النماذج المسبقة التدريب وتنزيلها واستخدامها.",
+        links: [
+          { rank: "المنهاج الرسمي المجاني", name: "📖 Hugging Face Official NLP Course", url: "https://huggingface.co/learn/nlp-course/chapter1/1", type: "global" }
+        ]
+      },
+
+      // PHASE 4
+      {
+        phase: 4,
+        title: "🔹 Prompt Engineering & Structured Outputs",
+        concepts: "System Prompts, Few-shot, Chain-of-Thought (CoT), وإجبار النماذج على إخراج بيانات هيكلية دقيقة (JSON/Pydantic Schema) باستخدام Instructor و Outlines.",
+        quality: "تثبيت مخرجات النماذج اللغوية للدمج في التطبيقات البرمجية.",
+        links: [
+          { rank: "كورس عملي عالمي", name: "🌐 DeepLearning.AI Prompt Engineering for Developers", url: "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/", type: "global" },
+          { rank: "المستندات الرسمية", name: "📖 Instructor Library Documentation", url: "https://python.useinstructor.com/", type: "global" }
+        ]
+      },
+      {
+        phase: 4,
+        title: "🔹 Production-Grade RAG Systems",
+        concepts: "Chunking Strategies (Semantic, Recursive), Embedding Models, Vector Databases (Qdrant, Pinecone, Milvus, pgvector), Hybrid Search (BM25 + Semantic), Re-ranking (Cohere, BGE-Reranker), و Corrective RAG (CRAG).",
+        quality: "بناء أنظمة بحث واسترجاع معرفي إنتاجية خالية من الهلوسة.",
+        links: [
+          { rank: "الكورس العالمي المتخصص", name: "🌐 DeepLearning.AI - Building & Evaluating Advanced RAG", url: "https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/", type: "global" },
+          { rank: "المستندات الرسمية", name: "📖 Qdrant Documentation & RAG Tutorials", url: "https://qdrant.tech/documentation/", type: "global" }
+        ]
+      },
+      {
+        phase: 4,
+        title: "🔹 LLM Fine-Tuning & Quantization",
+        concepts: "PEFT (LoRA, QLoRA), Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), Quantization (GGUF, AWQ, GPTQ, EXL2), وأدوات التدريب السريع Unsloth و Axolotl.",
+        quality: "تطويع النماذج اللغوية الضخمة على كروت شاشة محدودة.",
+        links: [
+          { rank: "أفضل دليل تطبيقي", name: "🌐 Unsloth Tutorials & Fine-Tuning Guides", url: "https://github.com/unslothai/unsloth", type: "global" },
+          { rank: "المستندات الرسمية", name: "📖 Hugging Face PEFT Documentation", url: "https://huggingface.co/docs/peft/index", type: "global" }
+        ]
+      },
+      {
+        phase: 4,
+        title: "🔹 AI Agents & Multi-Agent Orchestration",
+        concepts: "Tool Calling / Function Calling, Memory Persistence, Planning & Reflection, LangGraph (Graph-based orchestration), LlamaIndex Workflows, CrewAI, AutoGen.",
+        quality: "بناء أنظمة وكلاء أذكياء تنفيذية ذات موافقة بشرية.",
+        links: [
+          { rank: "المرجع الرسمي", name: "🌐 LangGraph Official Documentation & Tutorials", url: "https://langchain-ai.github.io/langgraph/", type: "global" },
+          { rank: "الكورس العالمي الموصى به", name: "🌐 DeepLearning.AI - AI Agents in LangGraph", url: "https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/", type: "global" }
+        ]
+      },
+
+      // PHASE 5
+      {
+        phase: 5,
+        title: "🔹 High-Performance LLM Inference Engines",
+        concepts: "vLLM (PagedAttention), Ollama, TensorRT-LLM, Text Generation Inference (TGI), Triton Inference Server. تحسين الإنتاجية (Tokens/sec) وإدارة GPU Memory.",
+        quality: "نشر وتوفير النماذج بسرعة فائقة وبكفاءة تشغيلية عنائية.",
+        links: [
+          { rank: "المستندات الرسمية", name: "📖 vLLM Official Documentation", url: "https://docs.vllm.ai/en/latest/", type: "global" }
+        ]
+      },
+      {
+        phase: 5,
+        title: "🔹 Experiment Tracking & Model Registry",
+        concepts: "MLflow لتتبع التجارب والنسخ (Model Lineage), Weights & Biases (W&B) لمراقبة المقاييس ورسم المنحنيات الحية.",
+        quality: "حفظ وتتبع إصدارات النماذج والتجريب المستمر.",
+        links: [
+          { rank: "المرجع الرسمي", name: "📖 MLflow Documentation", url: "https://mlflow.org/docs/latest/index.html", type: "global" },
+          { rank: "الدليل الرسمي", name: "📖 Weights & Biases Guides", url: "https://docs.wandb.ai/", type: "global" }
+        ]
+      },
+      {
+        phase: 5,
+        title: "🔹 Containerization & Orchestration",
+        concepts: "كتابة Dockerfiles متعددة المراحل (Multi-stage builds), إدارة الخدمات عبر Docker Compose, وتوزيع التطبيقات باستخدام Kubernetes (K8s) و Helm Charts.",
+        quality: "تغليف وتغليف الخدمات وتوزيعها على السيرفرات.",
+        links: [
+          { rank: "الأفضل عربياً", name: "📺 كورس Docker Elzero Web School (عربي)", url: "https://youtube.com/playlist?list=PLDoPjvoLjDl0", type: "arabic" },
+          { rank: "الدليل العالمي المالي", name: "🌐 A Docker Tutorial for Beginners", url: "https://docker-curriculum.com/", type: "global" }
+        ]
+      },
+      {
+        phase: 5,
+        title: "🔹 LLM Observability & Evaluation",
+        concepts: "التقييم التلقائي وإدارة الهلوسة باستخدام TruLens, Ragas, LangSmith, و Phoenix (Arize AI).",
+        quality: "مراقبة جودة الإجابات وسرعة الاستجابة ومنع الهلوسة في الإنتاج.",
+        links: [
+          { rank: "المرجع الرسمي", name: "📖 LangSmith Docs", url: "https://docs.smith.langchain.com/", type: "global" },
+          { rank: "إطار التقييم", name: "📖 Ragas Framework Docs", url: "https://docs.ragas.io/en/stable/", type: "global" }
+        ]
+      }
+    ];
+
+    function renderFullEncyclopedia() {
+      for (let p = 1; p <= 5; p++) {
+        const container = document.getElementById(`p${p}-skills-container`);
+        if (!container) continue;
+
+        const skills = encyclopediaData.filter(s => s.phase === p);
+        container.innerHTML = skills.map(skill => `
+          <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4 skill-card" data-skill="${skill.title.toLowerCase()} ${skill.concepts.toLowerCase()}">
+            <div class="flex justify-between items-start flex-wrap gap-2">
+              <h4 class="text-lg font-bold text-white">${skill.title}</h4>
+              <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">Phase ${skill.phase}</span>
+            </div>
+            
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 space-y-2 text-xs">
+              <span class="font-bold text-cyan-400 block">📌 المفاهيم والتقنيات التفصيلية:</span>
+              <p class="text-slate-300 leading-relaxed">${skill.concepts}</p>
+              <span class="font-bold text-purple-400 block pt-1">🎯 الهدف والنتيجة الإنتاجية:</span>
+              <p class="text-slate-400">${skill.quality}</p>
+            </div>
+
+            <div class="space-y-1.5 pt-1">
+              <span class="text-xs font-bold text-slate-400 block">🌐 مصادر التعلم الموصى بها (مرتبة بالأفضلية بالروابط المباشرة):</span>
+              <div class="flex flex-wrap gap-2">
+                ${skill.links.map(l => `
+                  <a href="${l.url}" target="_blank" class="text-xs font-bold px-3 py-1.5 rounded-lg border transition ${l.type === 'arabic' ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20' : 'bg-blue-500/10 text-blue-400 border-blue-500/30 hover:bg-blue-500/20'}">
+                    <span class="text-[10px] text-slate-400 font-normal ml-1">[${l.rank}]</span> ${l.name}
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('bg-blue-600', 'text-white');
+        el.classList.add('bg-slate-900', 'text-slate-400');
+      });
+
+      document.getElementById(tabId).classList.remove('hidden');
+      btn.classList.remove('bg-slate-900', 'text-slate-400');
+      btn.classList.add('bg-blue-600', 'text-white');
+    }
+
+    function calculateTimeline() {
+      const hours = parseFloat(document.getElementById('hours-per-day').value) || 3;
+      const totalHours = 600;
+      const months = Math.ceil(totalHours / (hours * 30));
+      document.getElementById('calculated-finish').innerText = `الموعد المتوقع: خلال ${months} أشهر (${hours} ساعات/يوم)`;
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('tracker-list');
+      const saved = JSON.parse(localStorage.getItem('verc_aiml_progress') || '[]');
+      
+      container.innerHTML = encyclopediaData.map((item, idx) => {
+        const isChecked = saved.includes(idx);
+        return `
+          <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 cursor-pointer transition">
+            <input type="checkbox" onchange="toggleItem(${idx})" ${isChecked ? 'checked' : ''} class="w-4 h-4 accent-blue-500 rounded">
+            <span class="text-xs font-bold text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">Phase ${item.phase}</span>
+            <span class="text-xs font-semibold text-slate-200">${item.title}</span>
+          </label>
+        `;
+      }).join('');
+
+      updateProgressUI(saved.length);
+    }
+
+    function toggleItem(idx) {
+      let saved = JSON.parse(localStorage.getItem('verc_aiml_progress') || '[]');
+      if (saved.includes(idx)) {
+        saved = saved.filter(i => i !== idx);
+      } else {
+        saved.push(idx);
+      }
+      localStorage.setItem('verc_aiml_progress', JSON.stringify(saved));
+      updateProgressUI(saved.length);
+    }
+
+    function updateProgressUI(count) {
+      const percent = Math.round((count / encyclopediaData.length) * 100);
+      const bar = document.getElementById('tracker-bar');
+      if (bar) bar.style.width = percent + '%';
+      document.getElementById('header-progress-badge').innerText = `التقدم: ${percent}% (${count}/${encyclopediaData.length})`;
+    }
+
+    function resetTracker() {
+      if (confirm('هل أنت تأكد من إعادة ضبط التتبع؟')) {
+        localStorage.removeItem('verc_aiml_progress');
+        renderChecklist();
+      }
+    }
+
+    function exportData() {
+      const data = localStorage.getItem('verc_aiml_progress') || '[]';
+      const blob = new Blob([data], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'aiml_roadmap_progress.json';
+      a.click();
+    }
+
+    function runSimCheck() {
+      const q1 = document.querySelector('input[name="sq1"]:checked');
+      const q2 = document.querySelector('input[name="sq2"]:checked');
+      let score = 0;
+      if (q1 && q1.value === "1") score++;
+      if (q2 && q2.value === "1") score++;
+
+      const res = document.getElementById('sim-result');
+      if (score === 2) {
+        res.className = "mt-4 text-center font-bold text-sm text-emerald-400";
+        res.innerText = "🎉 النتيجة: 100% (2/2) - إجابات رائعة ومطابقة للأنظمة الإنتاجية!";
+      } else {
+        res.className = "mt-4 text-center font-bold text-sm text-amber-400";
+        res.innerText = `النتيجة: ${score}/2. راجع مفاهيم vLLM و RAG في الموسوعة.`;
+      }
+    }
+
+    function searchFilter() {
+      const q = document.getElementById('main-search').value.toLowerCase().trim();
+      document.querySelectorAll('.skill-card').forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (!q || text.includes(q)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderFullEncyclopedia();
+      renderChecklist();
+      calculateTimeline();
+    });
+  </script>
+</body>
+</html>
